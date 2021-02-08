@@ -7,7 +7,7 @@ function GamingViewer({ gamingId }) {
     if (gaming) {
       async function getGaming() {
         const res = await fetch(
-          `https://www.amiiboapi.com/api/amiibo/?character?name=${gamingId}`,
+          `https://www.amiiboapi.com/api/amiibo/?head${gamingId}`,
           {
             headers: { accept: "application/json" },
           }
