@@ -3,13 +3,16 @@ import "./App.css";
 
 import PokemonViewer from "./components/pokemon/pokemon";
 import HeroViewer from "./components/hero/hero";
+import GamingViewer from "./components/gaming/gaming";
 
 function App() {
   const [pokemonId, setPokemonId] = useState();
   const [heroId, setHeroId] = useState();
+  const [gamingId, setGamingId] = useState();
 
   function handleClickPokemon() {
     setPokemonId(4);
+    setGamingId("00030000");
   }
 
   function handleClickHero() {
@@ -17,7 +20,7 @@ function App() {
     //scarlet witch 579
     //wonder woman 720
     //mystique 480
-    //157	Captain Marvel
+    //Captain Marvel 157
     setHeroId(107);
   }
 
@@ -29,6 +32,7 @@ function App() {
       <PokemonViewer pokemonId={pokemonId} />
       <button onClick={handleClickHero}>My favourite Hero is...</button>
       <HeroViewer heroId={heroId} />
+      <GamingViewer gamingId={gamingId} />
     </div>
   );
 }

@@ -18,7 +18,7 @@ function HeroViewer({ heroId }) {
         // console.log(data.biography);
         // console.log(data.image.url);
         // console.log(data.name);
-        // console.log(hero.biography[4]);
+        // console.log(hero.biography);
         // console.log(hero.image.url);
         // console.log(hero.name);
       }
@@ -28,14 +28,14 @@ function HeroViewer({ heroId }) {
 
   return (
     <div className="hero-viewer">
-      <p>{hero.biography.aliases[1]}</p>
+      {/* <p>{hero.biography.aliases[1]}</p>
       <img
         alt="Black Widow"
         src={hero.image.url}
         height={"300px"}
         width={"auto"}
       />
-      <p>AKA: {hero.name}</p>
+      <p>AKA: {hero.name}</p> */}
     </div>
   );
 }
