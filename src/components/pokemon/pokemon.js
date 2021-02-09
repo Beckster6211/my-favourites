@@ -26,7 +26,7 @@ function PokemonViewer({ pokemonId }) {
     <div className="pokemon-viewer">
       <p>{pokemon?.species?.name}</p>
       <img
-        // alt="pokemon"
+        //alt="pokemon"
         src={pokemon?.sprites?.front_default}
         height={"300px"}
         width={"auto"}

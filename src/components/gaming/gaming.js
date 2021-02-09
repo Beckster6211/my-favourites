@@ -7,7 +7,7 @@ function GamingViewer({ gamingId }) {
     if (gaming) {
       async function getGaming() {
         const res = await fetch(
-          `https://www.amiiboapi.com/api/amiibo/?head${gamingId}`,
+          `https://www.amiiboapi.com/api/amiibo/?key=${gamingId}`,
           {
             headers: { accept: "application/json" },
           }
@@ -15,19 +15,20 @@ function GamingViewer({ gamingId }) {
         const data = await res.json();
         console.log(data);
         setGaming(data);
-        //console.log(data.sprites.front_default);
-        //console.log(pokemon);
+        console.log(data.amiibo[14]);
+        console.log(data.amiibo[14].character);
+        console.log(data.amiibo[14].image);
       }
       getGaming();
     }
   }, [gamingId]);
 
   return (
-    <div className="pokemon-viewer">
-      {/* <p>{pokemon?.species?.name}</p>
+    <div className="gaming-viewer">
+      {/* <p>{gaming.amiibo[14].character}</p>
       <img
-        // alt="pokemon"
-        src={pokemon?.sprites?.front_default}
+        alt="Yoshi"
+        src={gaming.amiibo[14].image}
         height={"300px"}
         width={"auto"}
       /> */}

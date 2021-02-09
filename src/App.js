@@ -12,7 +12,7 @@ function App() {
 
   function handleClickPokemon() {
     setPokemonId(4);
-    setGamingId("00030000");
+    setGamingId(0x0003);
   }
 
   function handleClickHero() {
@@ -24,6 +24,10 @@ function App() {
     setHeroId(107);
   }
 
+  function handleClickGaming() {
+    setGamingId(0x0003);
+  }
+
   return (
     <div className="App">
       <br></br>
@@ -32,6 +36,9 @@ function App() {
       <PokemonViewer pokemonId={pokemonId} />
       <button onClick={handleClickHero}>My favourite Hero is...</button>
       <HeroViewer heroId={heroId} />
+      <button onClick={handleClickGaming}>
+        My favourite Gaming Character is...
+      </button>
       <GamingViewer gamingId={gamingId} />
     </div>
   );
