@@ -4,15 +4,17 @@ import "./App.css";
 import PokemonViewer from "./components/pokemon/pokemon";
 import HeroViewer from "./components/hero/hero";
 import GamingViewer from "./components/gaming/gaming";
+import DisneyViewer from "./components/disney/disney";
 
 function App() {
   const [pokemonId, setPokemonId] = useState();
   const [heroId, setHeroId] = useState();
   const [gamingId, setGamingId] = useState();
+  const [disneyId, setDisneyId] = useState();
 
   function handleClickPokemon() {
     setPokemonId(4);
-    setGamingId(0x0003);
+    setDisneyId();
   }
 
   function handleClickHero() {
@@ -40,6 +42,7 @@ function App() {
         My favourite Gaming Character is...
       </button>
       <GamingViewer gamingId={gamingId} />
+      <DisneyViewer disneyId={disneyId} />
     </div>
   );
 }

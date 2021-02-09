@@ -15,9 +15,9 @@ function GamingViewer({ gamingId }) {
         const data = await res.json();
         console.log(data);
         setGaming(data);
-        console.log(data.amiibo[14]);
-        console.log(data.amiibo[14].character);
-        console.log(data.amiibo[14].image);
+        // console.log(data.amiibo[14]);
+        // console.log(data.amiibo[14].character);
+        // console.log(data.amiibo[14].image);
       }
       getGaming();
     }
