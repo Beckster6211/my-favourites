@@ -14,16 +14,17 @@ function App() {
 
   function handleClickPokemon() {
     setPokemonId(4);
-    setDisneyId();
+    //setHeroId(107);
+    //setDisneyId();
   }
 
   function handleClickHero() {
+    setHeroId(107);
     //black widow 107
     //scarlet witch 579
     //wonder woman 720
     //mystique 480
     //Captain Marvel 157
-    setHeroId(107);
   }
 
   function handleClickGaming() {
@@ -42,7 +43,10 @@ function App() {
         My favourite Gaming Character is...
       </button>
       <GamingViewer gamingId={gamingId} />
-      <DisneyViewer disneyId={disneyId} />
+      <button onClick={handleClickGaming}>
+        My favourite Disney Character is...
+      </button>
+      {/* <DisneyViewer disneyId={disneyId} /> */}
     </div>
   );
 }
