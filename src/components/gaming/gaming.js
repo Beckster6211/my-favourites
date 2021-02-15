@@ -15,7 +15,7 @@ function GamingViewer({ gamingId }) {
         const data = await res.json();
         console.log(data);
         setGaming(data);
-        // console.log(data.amiibo[14]);
+        console.log(data.amiibo[16]);
         // console.log(data.amiibo[14].character);
         // console.log(data.amiibo[14].image);
       }
@@ -25,10 +25,10 @@ function GamingViewer({ gamingId }) {
 
   return (
     <div className="gaming-viewer">
-      {/* <p>{gaming.amiibo[14].character}</p>
+      {/* <p>{gaming.amiibo[16].character}</p>
       <img
-        alt="Yoshi"
-        src={gaming.amiibo[14].image}
+        //alt="Yoshi"
+        src={gaming.amiibo[16].image}
         height={"300px"}
         width={"auto"}
       /> */}

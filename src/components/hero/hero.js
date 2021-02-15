@@ -30,12 +30,13 @@ function HeroViewer({ heroId }) {
     <div className="hero-viewer">
       {/* <p>{hero.biography.aliases[1]}</p>
       <img
-        alt="Black Widow"
+        //alt="Black Widow"
         src={hero.image.url}
         height={"300px"}
         width={"auto"}
       />
-      <p>AKA: {hero.name}</p> */}
+      <p>AKA: {hero.name}</p>
+      <p>Only spider I like 😀</p> */}
     </div>
   );
 }
