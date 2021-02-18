@@ -16,7 +16,7 @@ function PokemonViewer({ pokemonId }) {
         console.log(data);
         setPokemon(data);
         console.log(data.sprites.front_default);
-        console.log(pokemon);
+        //console.log(pokemon);
       }
       getPokemon();
     }

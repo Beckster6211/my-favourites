@@ -25,13 +25,13 @@ function GamingViewer({ gamingId }) {
 
   return (
     <div className="gaming-viewer">
-      {/* <p>{gaming.amiibo[16].character}</p>
+      <p>{gaming?.amiibo[16]?.character}</p>
       <img
         //alt="Yoshi"
         src={gaming.amiibo[16].image}
         height={"300px"}
         width={"auto"}
-      /> */}
+      />
     </div>
   );
 }

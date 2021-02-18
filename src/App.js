@@ -14,8 +14,6 @@ function App() {
 
   function handleClickPokemon() {
     setPokemonId(4);
-    //setHeroId(107);
-    //setDisneyId();
   }
 
   function handleClickHero() {
@@ -30,6 +28,8 @@ function App() {
   function handleClickGaming() {
     setGamingId(0x0003);
   }
+
+  //setDisneyId();
 
   return (
     <div className="App">
