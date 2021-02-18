@@ -10,10 +10,6 @@ import DisneyViewer from "./components/disney/disney";
 import AnimalViewer from "./components/animal/animal";
 
 function App() {
-  // const [disneyId, setDisneyId] = useState();
-
-  //setDisneyId();
-
   return (
     <Router>
       <div className="App">
