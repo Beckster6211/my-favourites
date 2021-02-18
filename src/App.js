@@ -17,6 +17,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+        &nbsp;&nbsp;
         <nav>
           <Link to="/">Home</Link>
           &nbsp; &nbsp;
