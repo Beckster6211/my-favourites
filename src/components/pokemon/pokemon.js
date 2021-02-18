@@ -1,13 +1,18 @@
 import React, { useState, useEffect } from "react";
 
-function PokemonViewer({ pokemonId }) {
+function PokemonViewer() {
   const [pokemon, setPokemon] = useState({});
+  const [charmanderId, setCharmanderId] = useState();
+
+  function handleClickPokemon() {
+    setCharmanderId(4);
+  }
 
   useEffect(() => {
     if (pokemon) {
       async function getPokemon() {
         const res = await fetch(
-          `https://pokeapi.co/api/v2/pokemon/${pokemonId}`,
+          `https://pokeapi.co/api/v2/pokemon/${charmanderId}`,
           {
             headers: { accept: "application/json" },
           }
@@ -16,17 +21,19 @@ function PokemonViewer({ pokemonId }) {
         console.log(data);
         setPokemon(data);
         console.log(data.sprites.front_default);
-        console.log(pokemon);
+        //console.log(pokemon);
       }
       getPokemon();
     }
-  }, [pokemonId]);
+  }, [charmanderId]);
 
   return (
     <div className="pokemon-viewer">
-      <p>{pokemon?.species?.name}</p>
+      <h1>Pokemon</h1>
+      <button onClick={handleClickPokemon}>My favourite Pokemon is...</button>
+      <h1>{pokemon?.species?.name}</h1>
       <img
-        //alt="pokemon"
+        // alt="pokemon"
         src={pokemon?.sprites?.front_default}
         height={"300px"}
         width={"auto"}
