@@ -12,14 +12,14 @@ function GamingViewer() {
     if (gaming) {
       async function getGaming() {
         const res = await fetch(
-          `https://www.amiiboapi.com/api/amiibo/?key=${yoshiId}`,
+          `https://www.amiiboapi.com/api/amiibo/?key=${yoshiId}.json`,
           {
             headers: { accept: "application/json" },
           }
         );
         const data = await res.json();
         console.log(data);
-        setGaming(data);
+        setGaming(data.amiibo);
         console.log(data.amiibo[16]);
         console.log(data.amiibo[16].character);
         // console.log(data.amiibo[16].image);
@@ -32,15 +32,15 @@ function GamingViewer() {
     <div className="gaming-viewer">
       <h1>Gaming</h1>
       <button onClick={handleClickGaming}>
-        My favourite Gaming Character is...{" "}
+        My favourite Gaming Character is...
       </button>
-      {/* <p>{gaming.amiibo[16].character}</p> */}
-      {/* <img
+      <p>{gaming[16]?.character}</p>
+      <img
         //alt="Yoshi"
-        src={gaming.amiibo[16].image}
+        src={gaming[16]?.image}
         height={"300px"}
         width={"auto"}
-      /> */}
+      />
     </div>
   );
 }

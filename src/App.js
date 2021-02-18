@@ -44,6 +44,8 @@ function App() {
           <Link to="/hero">Hero</Link>
           &nbsp; &nbsp;
           <Link to="/gaming">Gaming</Link>
+          &nbsp; &nbsp;
+          <Link to="/disney">Disney</Link>
         </nav>
         <Switch>
           <Route path="/pokemon">
@@ -54,6 +56,9 @@ function App() {
           </Route>
           <Route path="/gaming">
             <GamingViewer />
+          </Route>
+          <Route path="/disney">
+            <DisneyViewer />
           </Route>
           <Route path="/">
             <Home />
