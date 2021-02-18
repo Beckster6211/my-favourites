@@ -21,8 +21,8 @@ function GamingViewer() {
         console.log(data);
         setGaming(data);
         console.log(data.amiibo[16]);
-        // console.log(data.amiibo[14].character);
-        // console.log(data.amiibo[14].image);
+        console.log(data.amiibo[16].character);
+        // console.log(data.amiibo[16].image);
       }
       getGaming();
     }
@@ -34,8 +34,8 @@ function GamingViewer() {
       <button onClick={handleClickGaming}>
         My favourite Gaming Character is...{" "}
       </button>
-      {/* <p>{gaming?.amiibo[16]?.character}</p>
-      <img
+      {/* <p>{gaming.amiibo[16].character}</p> */}
+      {/* <img
         //alt="Yoshi"
         src={gaming.amiibo[16].image}
         height={"300px"}

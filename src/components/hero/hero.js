@@ -5,7 +5,7 @@ function HeroViewer() {
   const [blackWidowId, setBlackWidowId] = useState();
 
   function handleClickHero() {
-    setBlackWidowId(107);
+    setBlackWidowId("107");
     //black widow 107
     //scarlet witch 579
     //wonder woman 720
@@ -17,7 +17,7 @@ function HeroViewer() {
     if (hero) {
       async function getHero() {
         const res = await fetch(
-          `https://superheroapi.com/api/10224929409602023/${blackWidowId}`,
+          `https://akabab.github.io/superhero-api/api/id/${blackWidowId}.json`,
           {
             headers: { accept: "application/json" },
           }
@@ -26,10 +26,10 @@ function HeroViewer() {
         console.log(data);
         setHero(data);
         // console.log(data.biography);
-        // console.log(data.image.url);
+        // console.log(data.images.md);
         // console.log(data.name);
         // console.log(hero.biography);
-        // console.log(hero.image.url);
+        // console.log(hero.image);
         // console.log(hero.name);
       }
       getHero();
@@ -40,16 +40,17 @@ function HeroViewer() {
     <div className="hero-viewer">
       <h1>Hero</h1>
       <button onClick={handleClickHero}>My favourite Hero is...</button>
-      {/* <p>{hero.biography.aliases[1]}</p>
+      <h1>{hero?.biography?.aliases[1]}</h1>
+
       <img
         //alt="Black Widow"
-        src={hero.image.url}
+        src={hero?.images?.md}
         height={"300px"}
         width={"auto"}
       />
       <p>
-        AKA: {hero.name} <br></br>Only spider I will ever like 😀
-      </p> */}
+        AKA: {hero?.name} <br></br>Only spider I will ever like 😀
+      </p>
     </div>
   );
 }
