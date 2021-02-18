@@ -5,14 +5,14 @@ function GamingViewer() {
   const [yoshiId, setYoshiId] = useState();
 
   function handleClickGaming() {
-    setYoshiId(0x0003);
+    setYoshiId("0x0003");
   }
 
   useEffect(() => {
     if (gaming) {
       async function getGaming() {
         const res = await fetch(
-          `https://www.amiiboapi.com/api/amiibo/?key=${yoshiId}`,
+          `https://www.amiiboapi.com/api/amiibo?key=${yoshiId}`,
           {
             headers: { accept: "application/json" },
           }
@@ -34,10 +34,10 @@ function GamingViewer() {
       <button onClick={handleClickGaming}>
         My favourite Gaming Character is...{" "}
       </button>
-      {/* <p>{gaming.amiibo[16].character}</p> */}
-      {/* <img
+      {/* <p>{gaming?.amiibo[16]?.character}</p>
+      <img
         //alt="Yoshi"
-        src={gaming.amiibo[16].image}
+        src={gaming?.amiibo[16]?.image}
         height={"300px"}
         width={"auto"}
       /> */}

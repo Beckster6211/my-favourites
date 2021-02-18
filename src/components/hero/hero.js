@@ -41,16 +41,14 @@ function HeroViewer() {
       <h1>Hero</h1>
       <button onClick={handleClickHero}>My favourite Hero is...</button>
       <h1>{hero?.biography?.aliases[1]}</h1>
-
       <img
         //alt="Black Widow"
         src={hero?.images?.md}
         height={"300px"}
         width={"auto"}
       />
-      <p>
-        AKA: {hero?.name} <br></br>Only spider I will ever like 😀
-      </p>
+      <p>Also Known As : {hero?.name}</p>
+      <p>Only spider I will ever like 😀</p>
     </div>
   );
 }
