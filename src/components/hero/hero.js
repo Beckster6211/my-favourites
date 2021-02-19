@@ -49,7 +49,7 @@ function HeroViewer() {
         width={"auto"}
       />
       <p>
-        AKA: {hero?.name} <br></br>Only spider I will ever like 😀
+        AKA: ... {hero?.name} <br></br>Only spider I will ever like 😀
       </p>
     </div>
   );

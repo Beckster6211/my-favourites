@@ -28,7 +28,7 @@ function App() {
           &nbsp; &nbsp;
           <Link to="/animal">Animal</Link>
           &nbsp; &nbsp;
-          <Link to="/food">Food</Link>
+          {/* <Link to="/food">Food</Link> */}
         </nav>
         <Switch>
           <Route path="/pokemon">
@@ -46,9 +46,9 @@ function App() {
           <Route path="/animal">
             <AnimalViewer />
           </Route>
-          <Route path="/food">
+          {/* <Route path="/food">
             <Food />
-          </Route>
+          </Route> */}
           <Route path="/">
             <Home />
           </Route>
