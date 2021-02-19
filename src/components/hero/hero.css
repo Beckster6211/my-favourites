@@ -1,0 +1,32 @@
+.hero-viewer {
+  background-image: url("https://www.iwantwallpaper.co.uk/images/rasch-ka-pow-pattern-comic-book-motif-cartoon-childrens-wallpaper-272604-p2786-5732_image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: center;
+  opacity: 0.8;
+}
+
+.blackWidow {
+  height: 300px;
+  width: auto;
+}
+
+/* .blackWidowSymbol {
+  background-image: url("https://www.nicepng.com/png/detail/120-1208220_black-widow-symbol-fill-black-widow-logo-marvel.png");
+  height: 300px;
+  width: auto;
+} */
+
+.dcLogo {
+  width: 100px;
+  height: 100px;
+}
+
+.marvelLogo {
+  width: 100px;
+  height: 100px;
+}
+
+.hero {
+  display: inline;
+}

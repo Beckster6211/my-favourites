@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./gaming.css";
 
 function GamingViewer() {
   const [gaming, setGaming] = useState({});
@@ -12,7 +13,7 @@ function GamingViewer() {
     if (gaming) {
       async function getGaming() {
         const res = await fetch(
-          `https://www.amiiboapi.com/api/amiibo/?key=${yoshiId}.json`,
+          `https://www.amiiboapi.com/api/amiibo/?key=${yoshiId}`,
           {
             headers: { accept: "application/json" },
           }

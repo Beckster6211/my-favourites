@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./hero.css";
 
 function HeroViewer() {
   const [hero, setHero] = useState({});
@@ -38,19 +39,32 @@ function HeroViewer() {
 
   return (
     <div className="hero-viewer">
-      <h1>Hero</h1>
-      <button onClick={handleClickHero}>My favourite Hero is...</button>
-      <h1>{hero?.biography?.aliases[1]}</h1>
+      <div>
+        <img
+          className="dcLogo"
+          src="https://i.pinimg.com/originals/39/9c/4d/399c4ddbb8b0bca6150195633b4acf37.png"
+        />
+        &nbsp; &nbsp;
+        <h1 className="hero">Hero</h1>
+        &nbsp; &nbsp;
+        <img
+          className="marvelLogo"
+          src="https://static3.srcdn.com/wordpress/wp-content/uploads/2019/12/marvel-logo-header.jpg"
+        />
+      </div>
+      <div className="blackWidowSymbol">
+        <button onClick={handleClickHero}>My favourite Hero is...</button>
+        <h1>{hero?.biography?.aliases[1]}</h1>
 
-      <img
-        //alt="Black Widow"
-        src={hero?.images?.md}
-        height={"300px"}
-        width={"auto"}
-      />
-      <p>
-        AKA: {hero?.name} <br></br>Only spider I will ever like 😀
-      </p>
+        <img
+          className="blackWidow"
+          //alt="Black Widow"
+          src={hero?.images?.md}
+        />
+        <h3>
+          AKA: ... {hero?.name} <br></br>Only spider I will ever like 😀
+        </h3>
+      </div>
     </div>
   );
 }

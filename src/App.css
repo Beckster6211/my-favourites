@@ -1,5 +1,21 @@
 .App {
   text-align: center;
+  background-color: cornflowerblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.link {
+  color: #282c34;
+}
+
+.nav {
+}
+
+.pokemon {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  z-index: 2;
 }
 
 .App-logo {

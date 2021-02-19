@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./pokemon.css";
 
 function PokemonViewer() {
   const [pokemon, setPokemon] = useState({});
@@ -29,14 +30,19 @@ function PokemonViewer() {
 
   return (
     <div className="pokemon-viewer">
-      <h1>Pokemon</h1>
+      <br></br>
+      <img
+        className="pokemonLogo"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png"
+      ></img>
+      <br></br>
+      <br></br>
       <button onClick={handleClickPokemon}>My favourite Pokemon is...</button>
       <h1>{pokemon?.species?.name}</h1>
       <img
+        className="charmander"
         // alt="pokemon"
         src={pokemon?.sprites?.front_default}
-        height={"300px"}
-        width={"auto"}
       />
     </div>
   );
