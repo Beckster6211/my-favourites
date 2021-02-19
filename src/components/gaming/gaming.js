@@ -32,7 +32,19 @@ function GamingViewer() {
   return (
     <div className="gaming-viewer">
       <br></br>
-      <h1>Gaming</h1>
+      <img
+        className="xboxButtons"
+        src="https://i.pinimg.com/originals/e0/76/71/e076714f05e6ad680469396f2fa89c11.png"
+      ></img>
+      &nbsp;
+      <h1 className="gaming">Gaming</h1>
+      &nbsp;
+      <img
+        className="playstationButtons"
+        src="https://i.pinimg.com/originals/17/c4/06/17c4067e8efe0e643dd20d7d2d003423.png"
+      ></img>
+      <br></br>
+      <br></br>
       <button onClick={handleClickGaming}>
         My favourite Gaming Character is...
       </button>
