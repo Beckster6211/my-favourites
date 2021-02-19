@@ -1,0 +1,17 @@
+.pokemon-viewer {
+  background-image: url("https://i.pinimg.com/originals/df/4e/8b/df4e8ba28f912bf9cdf9fa0dfc196411.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: center;
+  opacity: 0.9;
+}
+
+.pokemonLogo {
+  width: 450px;
+  height: 180px;
+}
+
+.charmander {
+  height: 400px;
+  width: auto;
+}

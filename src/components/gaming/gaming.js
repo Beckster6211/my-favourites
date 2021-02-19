@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./gaming.css";
 
 function GamingViewer() {
   const [gaming, setGaming] = useState({});
