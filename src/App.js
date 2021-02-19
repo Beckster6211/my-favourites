@@ -8,6 +8,7 @@ import HeroViewer from "./components/hero/hero";
 import GamingViewer from "./components/gaming/gaming";
 import DisneyViewer from "./components/disney/disney";
 import AnimalViewer from "./components/animal/animal";
+import Food from "./components/food/food";
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
           <Link to="/disney">Disney</Link>
           &nbsp; &nbsp;
           <Link to="/animal">Animal</Link>
+          &nbsp; &nbsp;
+          <Link to="/food">Food</Link>
         </nav>
         <Switch>
           <Route path="/pokemon">
@@ -42,6 +45,9 @@ function App() {
           </Route>
           <Route path="/animal">
             <AnimalViewer />
+          </Route>
+          <Route path="/food">
+            <Food />
           </Route>
           <Route path="/">
             <Home />
