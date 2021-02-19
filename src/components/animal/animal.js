@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
+import "./animal.css";
 
 function AnimalViewer() {
   function imageClick() {
-    const tiger = "./_113249919_hi061718491.jpg";
+    const tiger =
+      "http://assets.stickpng.com/thumbs/58b056418a4b5bbbc849294d.png";
     document.getElementById("tigerPic").src = tiger;
     // <img src="./_113249919_hi061718491.jpg" />;
     console.log("Clicked");
@@ -37,17 +39,17 @@ function AnimalViewer() {
 
   return (
     <div className="animal-viewer">
+      <br></br>
       <h1>Animal</h1>
       {/* <button onClick={imageClick}>Click me</button> */}
       <button onClick={imageClick}>My favourte animal is...</button>
       <br></br>
       <br></br>
       <img
+        className="animalImage"
         id="tigerPic"
         alt="purrfect"
         src="tigerPic"
-        width="150px"
-        height="150px"
       ></img>
 
       {/* <img

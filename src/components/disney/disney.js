@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./disney.css";
 
 function DisneyViewer() {
   function imageClick() {
@@ -34,6 +35,7 @@ function DisneyViewer() {
 
   return (
     <div className="disney-viewer">
+      <br></br>
       <h1>Disney</h1>
       <button onClick={imageClick}>My favourte Disney character is...</button>
       <br></br>
@@ -42,8 +44,8 @@ function DisneyViewer() {
         id="mickeyPic"
         alt="I'm a traditionist"
         src="mickeyPic"
-        width="250px"
-        height="250px"
+        width="450px"
+        height="450px"
       ></img>
       {/* <button onClick={handleClickDisney}>
         My favourite Disney Character is...

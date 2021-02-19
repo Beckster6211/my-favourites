@@ -1,0 +1,11 @@
+.animal-viewer {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Tioman_Rainforest.JPG/220px-Tioman_Rainforest.JPG");
+  background-repeat: no-repeat;
+  background-size: 1000px 700px;
+  position: center;
+}
+
+.animalImage {
+  width: 550px;
+  height: 350px;
+}
