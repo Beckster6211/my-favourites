@@ -1,7 +1,16 @@
 .gaming-viewer {
   background-image: url("https://i.pinimg.com/originals/dc/8d/ef/dc8def609c27f9123c4f61a83a3b93bd.jpg");
   background-repeat: no-repeat;
-  background-size: 1000px 500px;
+  background-size: 1000px 700px;
   position: center;
   /* opacity: 0.8; */
+}
+
+/* .yoshiText {
+  font-size: 40px;
+} */
+
+.yoshiImage {
+  height: 400px;
+  width: auto;
 }

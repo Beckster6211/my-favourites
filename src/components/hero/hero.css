@@ -7,7 +7,7 @@
 }
 
 .blackWidow {
-  height: 300px;
+  height: 400px;
   width: auto;
 }
 
@@ -18,15 +18,19 @@
 } */
 
 .dcLogo {
-  width: 100px;
-  height: 100px;
+  width: 250px;
+  height: 130px;
 }
 
 .marvelLogo {
-  width: 100px;
+  width: 300px;
   height: 100px;
 }
 
 .hero {
   display: inline;
+}
+
+.blackWidowText {
+  font-size: 30px;
 }

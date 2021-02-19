@@ -37,11 +37,15 @@ function App() {
           </Link>
           &nbsp; &nbsp;
           <Link className="link" to="/disney">
-            Disney
+            Disney{" "}
+            <img
+              className="disney"
+              src="https://i.pinimg.com/originals/dc/5f/ee/dc5fee0189b193c8ebf8e19076ad56f0.png"
+            ></img>
           </Link>
           &nbsp; &nbsp;
           <Link className="link" to="/animal">
-            Animal
+            Animal 🐾
           </Link>
           &nbsp; &nbsp;
           {/* <Link to="/food">Food</Link> */}

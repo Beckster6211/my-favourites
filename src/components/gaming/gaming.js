@@ -31,16 +31,16 @@ function GamingViewer() {
 
   return (
     <div className="gaming-viewer">
+      <br></br>
       <h1>Gaming</h1>
       <button onClick={handleClickGaming}>
         My favourite Gaming Character is...
       </button>
-      <p>{gaming[16]?.character}</p>
+      <h1 className="yoshiText">{gaming[16]?.character}</h1>
       <img
+        className="yoshiImage"
         //alt="Yoshi"
         src={gaming[16]?.image}
-        height={"300px"}
-        width={"auto"}
       />
     </div>
   );

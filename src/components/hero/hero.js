@@ -40,30 +40,31 @@ function HeroViewer() {
   return (
     <div className="hero-viewer">
       <div>
+        <br></br>
         <img
           className="dcLogo"
           src="https://i.pinimg.com/originals/39/9c/4d/399c4ddbb8b0bca6150195633b4acf37.png"
         />
-        &nbsp; &nbsp;
+        &nbsp; &nbsp;&nbsp;
         <h1 className="hero">Hero</h1>
-        &nbsp; &nbsp;
+        &nbsp; &nbsp;&nbsp;
         <img
           className="marvelLogo"
           src="https://static3.srcdn.com/wordpress/wp-content/uploads/2019/12/marvel-logo-header.jpg"
         />
       </div>
-      <div className="blackWidowSymbol">
+      <div>
         <button onClick={handleClickHero}>My favourite Hero is...</button>
-        <h1>{hero?.biography?.aliases[1]}</h1>
+        <h1 className="blackWidowText">{hero?.biography?.aliases[1]}</h1>
 
         <img
           className="blackWidow"
           //alt="Black Widow"
           src={hero?.images?.md}
         />
-        <h3>
+        <h1 className="blackWidowText">
           AKA: ... {hero?.name} <br></br>Only spider I will ever like 😀
-        </h3>
+        </h1>
       </div>
     </div>
   );
