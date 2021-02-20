@@ -36,9 +36,9 @@ function GamingViewer() {
         className="xboxButtons"
         src="https://i.pinimg.com/originals/e0/76/71/e076714f05e6ad680469396f2fa89c11.png"
       ></img>
-      &nbsp;
+      &nbsp;&nbsp;&nbsp;
       <h1 className="gaming">Gaming</h1>
-      &nbsp;
+      &nbsp;&nbsp;&nbsp;
       <img
         className="playstationButtons"
         src="https://i.pinimg.com/originals/17/c4/06/17c4067e8efe0e643dd20d7d2d003423.png"

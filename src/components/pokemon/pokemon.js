@@ -38,7 +38,9 @@ function PokemonViewer() {
       <br></br>
       <br></br>
       <button onClick={handleClickPokemon}>My favourite Pokemon is...</button>
-      <h1>{pokemon?.species?.name}</h1>
+      <br></br>
+      <br></br>
+      <h1 className="charmanderName">{pokemon?.species?.name}</h1>
       <img
         className="charmander"
         // alt="pokemon"

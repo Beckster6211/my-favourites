@@ -36,8 +36,17 @@ function DisneyViewer() {
   return (
     <div className="disney-viewer">
       <br></br>
-      <h1>Disney</h1>
+      <br></br>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Disney_wordmark.svg/1280px-Disney_wordmark.svg.png"
+        width="450px"
+        height="100px"
+      ></img>
+      <br></br>
+      <br></br>
+      {/* <h1>Disney</h1> */}
       <button onClick={imageClick}>My favourte Disney character is...</button>
+      <br></br>
       <br></br>
       <br></br>
       <img
@@ -47,6 +56,8 @@ function DisneyViewer() {
         width="450px"
         height="450px"
       ></img>
+      <br></br>
+      <br></br>
       {/* <button onClick={handleClickDisney}>
         My favourite Disney Character is...
       </button> */}
@@ -57,6 +68,7 @@ function DisneyViewer() {
         height={"300px"}
         width={"auto"}
       /> */}
+      <br></br>
     </div>
   );
 }

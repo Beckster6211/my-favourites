@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: center;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .blackWidow {
@@ -29,8 +29,10 @@
 
 .hero {
   display: inline;
+  /* position: absolute; */
 }
 
 .blackWidowText {
   font-size: 30px;
+  color: rgb(0, 0, 0);
 }

@@ -11,17 +11,30 @@
 } */
 
 .xboxButtons {
-  width: 70px;
-  height: 70px;
+  display: inline;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  float: center;
+  position: relative;
 }
 
 .gaming {
+  position: relative;
   display: inline;
+  align-items: center;
+  justify-content: center;
 }
 
 .playstationButtons {
-  width: 70px;
-  height: 70px;
+  display: inline;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  float: center;
+  position: relative;
 }
 
 .yoshiImage {
