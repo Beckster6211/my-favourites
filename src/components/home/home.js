@@ -19,6 +19,16 @@ function Home() {
       <br></br>
       <br></br>
       <p className="text">👍 Hope you like it I had fun making it </p>
+      <br></br>
+      <br></br>
+      <br></br>
+      <img
+        className="chelmsleyWood"
+        alt="Chelmsley Wood"
+        src="./Centre-720x488.jpg"
+      ></img>
+      <br></br>
+      <p className="text">My actual home (...well near it)</p>
     </div>
   );
 }

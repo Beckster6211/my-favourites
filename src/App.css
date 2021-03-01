@@ -2,14 +2,15 @@
   text-align: center;
   background-color: cornflowerblue;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  min-height: 100vh;
 }
 
 .link {
   color: #282c34;
 }
 
-.nav {
-}
+/* .nav {
+} */
 
 .pokemon {
   width: 20px;

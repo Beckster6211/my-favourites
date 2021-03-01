@@ -1,9 +1,15 @@
 .homePage {
-  background-image: url("https://bcuassets.blob.core.windows.net/img/bullring-bull-300x250-131378485455971261.jpg");
+  background-image: url("./bullring-bull-300x250-131378485455971261.jpg");
   background-repeat: no-repeat;
-  background-size: 1000px 450px;
+  background-size: 100%;
+  /* background-position: cover; */
   position: relative;
-  opacity: 0.5;
+  opacity: 0.7;
+  /* min-height: 100vh; */
+}
+.chelmsleyWood {
+  width: 30%;
+  height: auto;
 }
 
 .home {
@@ -11,12 +17,13 @@
 }
 
 .text {
-  font-size: 30px;
+  font-size: 3vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(0, 2, 3);
+  /* color: rgb(0, 2, 3); */
   text-align: center;
-  padding: 3%;
-  margin: 3%;
+  padding: 4%;
+  margin: 4%;
   display: inline;
   font-weight: 700;
+  color: black;
 }
