@@ -38,7 +38,8 @@ function DisneyViewer() {
       <br></br>
       <br></br>
       <img
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Disney_wordmark.svg/1280px-Disney_wordmark.svg.png"
+        src="./1280px-Disney_wordmark.svg.png"
+        alt="Disney Logo"
         width="450px"
         height="100px"
       ></img>

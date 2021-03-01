@@ -43,14 +43,16 @@ function HeroViewer() {
         <br></br>
         <img
           className="dcLogo"
-          src="https://i.pinimg.com/originals/39/9c/4d/399c4ddbb8b0bca6150195633b4acf37.png"
+          src="./399c4ddbb8b0bca6150195633b4acf37.png"
+          alt="DC Logo"
         />
         &nbsp; &nbsp;&nbsp;
         <h1 className="hero">Hero</h1>
         &nbsp; &nbsp;&nbsp;
         <img
           className="marvelLogo"
-          src="https://static3.srcdn.com/wordpress/wp-content/uploads/2019/12/marvel-logo-header.jpg"
+          src="./marvel-logo-header.jpg"
+          alt="Marvel Logo"
         />
       </div>
       <div>
