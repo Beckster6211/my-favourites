@@ -24,7 +24,8 @@ function App() {
             Pokemon
             <img
               className="pokemon"
-              src="https://static.wikia.nocookie.net/pokemon-fano/images/6/6f/Poke_Ball.png/revision/latest/scale-to-width-down/340?cb=20140520015336"
+              src="./Poke_Ball.png"
+              alt="pokeBall icon"
             ></img>
           </Link>
           &nbsp; &nbsp;
@@ -40,7 +41,8 @@ function App() {
             Disney{" "}
             <img
               className="disney"
-              src="https://i.pinimg.com/originals/dc/5f/ee/dc5fee0189b193c8ebf8e19076ad56f0.png"
+              src="./dc5fee0189b193c8ebf8e19076ad56f0.png"
+              alt="Walt Disney logo"
             ></img>
           </Link>
           &nbsp; &nbsp;

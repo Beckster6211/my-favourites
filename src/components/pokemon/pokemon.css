@@ -1,5 +1,5 @@
 .pokemon-viewer {
-  background-image: url("https://i.pinimg.com/originals/df/4e/8b/df4e8ba28f912bf9cdf9fa0dfc196411.png");
+  background-image: url("./df4e8ba28f912bf9cdf9fa0dfc196411.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: center;
@@ -7,8 +7,8 @@
 }
 
 .pokemonLogo {
-  width: 450px;
-  height: 180px;
+  width: 70%;
+  height: auto;
 }
 
 .charmanderName {
@@ -16,6 +16,6 @@
 }
 
 .charmander {
-  height: 400px;
+  height: 50vh;
   width: auto;
 }
