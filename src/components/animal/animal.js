@@ -4,7 +4,7 @@ import "./animal.css";
 function AnimalViewer() {
   function imageClick() {
     const tiger =
-      "http://assets.stickpng.com/thumbs/58b056418a4b5bbbc849294d.png";
+      "https://lh3.googleusercontent.com/proxy/qJs6pc-ushAnWQn26-RSb6DYm8_arwxUFrff8kGfGAPdWBQywq0VcYJjz4r9WDPqd2JkzwLHFIHgQACcaIWHe5A27izf6Aj3owIO5y5ZR75QKtNtwxBJkd0j-PUnVw";
     document.getElementById("tigerPic").src = tiger;
     // <img src="./_113249919_hi061718491.jpg" />;
     console.log("Clicked");
